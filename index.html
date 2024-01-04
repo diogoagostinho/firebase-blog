@@ -27,34 +27,38 @@
         <div class="top-section">
           <div class="navbar">
             <div class="navbar__logo">
-              <img src="firebase-logo.svg" />
-              <a href="https://firebase.google.com/" target="_blank"
-                ><h3>Firebase</h3></a
-              >
-            </div>
-            <div class="navbar__links">
-              <a
-                href="https://firebase.google.com/products-build"
-                target="_blank"
-                ><p>Products</p></a
-              >
-              <a href="https://firebase.google.com/use-cases" target="_blank"
-                ><p>Use cases</p></a
-              >
-              <a href="https://firebase.google.com/pricing" target="_blank"
-                ><p>Pricing</p></a
-              >
-              <a href="https://firebase.google.com/docs" target="_blank"
-                ><p>Docs</p></a
-              >
-              <a href="https://firebase.google.com/support" target="_blank"
-                ><p>Support</p></a
-              >
+              <div class="navbar__logo-logo">
+                <img src="firebase-logo.svg" />
+                <a href="https://firebase.google.com/" target="_blank"
+                  ><h3>Firebase</h3></a
+                >
+              </div>
+              <div class="navbar__links">
+                <a
+                  href="https://firebase.google.com/products-build"
+                  target="_blank"
+                  ><p>Products</p></a
+                >
+                <a href="https://firebase.google.com/use-cases" target="_blank"
+                  ><p>Use cases</p></a
+                >
+                <a href="https://firebase.google.com/pricing" target="_blank"
+                  ><p>Pricing</p></a
+                >
+                <a href="https://firebase.google.com/docs" target="_blank"
+                  ><p>Docs</p></a
+                >
+                <a href="https://firebase.google.com/support" target="_blank"
+                  ><p>Support</p></a
+                >
+              </div>
             </div>
             <div class="navbar__buttons">
-              <img src="sun.svg" />
+              <a href=""><img src="sun.svg" /></a>
               <hr class="navbar__buttons_separation" />
-              <img src="feed.svg" />
+              <a href="https://firebase.blog/rss.xml" target="_blank"
+                ><img src="feed.svg"
+              /></a>
             </div>
             <div class="navbar__console">
               <a href="https://console.firebase.google.com" target="_blank"
@@ -62,56 +66,155 @@
               >
             </div>
           </div>
+
           <div class="title-section">
-            <h3>The Firebase Blog</h3>
+            <a href="https://firebase.blog/" target="_blank"
+              ><h3>The Firebase Blog</h3></a
+            >
           </div>
-          <div class="post">
-            <div class="post__title last-post">
-              <h1 class="monofont">Last Post Title</h1>
-            </div>
-            <div class="post__content">
-              <div class="post__content left">
-                <div class="post__user-image">
-                  <img src="" />
+          <div class="top-section__post">
+            <div class="post">
+              <div class="post__content">
+                <div class="post__content-title monofont">
+                  <a href=""><h1>VueFire is now stable</h1></a>
                 </div>
-                <div class="post__user-info">
-                  <div class="post__user-name"><h3>User Name</h3></div>
-                  <div class="post__user-job"><p>User Job</p></div>
-                  <div class="post__date"><p>January 01, 2024</p></div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="placeholder.png" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name"><h3>User Name</h3></div>
+                        <div class="post__user-job monofont">
+                          <p>User Job</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>January 01, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post_right">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <a href=""><p class="monofont">+2 more...</p></a>
+                  </div>
                 </div>
-              </div>
-              <div class="post__content right">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <p class="monofont">+2 more...</p>
               </div>
             </div>
           </div>
         </div>
         <div class="bottom-section">
-          <div class="post">
-            <hr />
-            <div class="post__title">
-              <h1>Post Title</h1>
+          <div class="content_left">
+            <div class="post">
+              <hr />
+              <div class="post__content">
+                <div class="post__content-title">
+                  <a href=""
+                    ><h2>
+                      Adding complex Firestore queries to a Jetpack Compose app
+                    </h2></a
+                  >
+                </div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="placeholder.png" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name">
+                          <h3>Marina Coelho</h3>
+                        </div>
+                        <div class="post__user-job monofont">
+                          <p>Developer Relations Engineer</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>December 13, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post_right">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <a href=""> <p class="monofont">+2 more...</p></a>
+                  </div>
+                </div>
+              </div>
+              <hr />
             </div>
-            <div class="post__content">
-              <div class="post__content left">
-                <div class="post__user-image">
-                  <img src="" />
+            <div class="post">
+              <hr />
+              <div class="post__content">
+                <div class="post__content-title">
+                  <a href=""><h2>Post Title</h2></a>
                 </div>
-                <div class="post__user-info">
-                  <div class="post__user-name"><h3>User Name</h3></div>
-                  <div class="post__user-job"><p>User Job</p></div>
-                  <div class="post__date"><p>January 01, 2024</p></div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="placeholder.png" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name"><h3>User Name 1</h3></div>
+                        <div class="post__user-job monofont">
+                          <a href=""><p class="monofont">+2 more...</p></a>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>January 01, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- USER SEP -->
+
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="placeholder.png" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name"><h3>User Name 1</h3></div>
+                        <div class="post__user-job monofont">
+                          <p>User Job</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>January 01, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post_right">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <a href=""><p class="monofont">+2 more...</p></a>
+                  </div>
                 </div>
               </div>
-              <div class="post__content right">
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <p class="monofont">+2 more</p>
-              </div>
+              <hr />
             </div>
           </div>
+          <div class="content_right">
+            <h3>Categories</h3>
+            <div class="category-buttons">
+              <button>Button 1</button>
+              <button>Button 2</button>
+              <button>Button 3</button>
+              <button>Button 4</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p class="monofont">
+            2024 Diogo Agostinho -
+            <a
+              href="https://github.com/diogoagostinho/firebase-blog"
+              target="_blank"
+              >See on GitHub</a
+            >
+          </p>
         </div>
       </div>
     </div>
