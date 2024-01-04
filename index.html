@@ -1,13 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles&Scripts -->
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="src/main.ts"></script>
+
+    <!-- Website Data -->
+    <title>The Firebase Blog</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="root">
+      <div class="content">
+        <div class="top-section">
+          <div class="navbar">
+            <div class="navbar__logo">
+              <img src="firebase-logo.svg" />
+              <a href="https://firebase.google.com/" target="_blank"
+                ><h3>Firebase</h3></a
+              >
+            </div>
+            <div class="navbar__links">
+              <a
+                href="https://firebase.google.com/products-build"
+                target="_blank"
+                ><p>Products</p></a
+              >
+              <a href="https://firebase.google.com/use-cases" target="_blank"
+                ><p>Use cases</p></a
+              >
+              <a href="https://firebase.google.com/pricing" target="_blank"
+                ><p>Pricing</p></a
+              >
+              <a href="https://firebase.google.com/docs" target="_blank"
+                ><p>Docs</p></a
+              >
+              <a href="https://firebase.google.com/support" target="_blank"
+                ><p>Support</p></a
+              >
+            </div>
+            <div class="navbar__buttons">
+              <img src="sun.svg" />
+              <hr class="navbar__buttons_separation" />
+              <img src="feed.svg" />
+            </div>
+            <div class="navbar__console">
+              <a href="https://console.firebase.google.com" target="_blank"
+                ><p>Go to console</p></a
+              >
+            </div>
+          </div>
+          <div class="title-section">
+            <h3>The Firebase Blog</h3>
+          </div>
+          <div class="post">
+            <div class="post__title last-post">
+              <h1 class="monofont">Last Post Title</h1>
+            </div>
+            <div class="post__content">
+              <div class="post__content left">
+                <div class="post__user-image">
+                  <img src="" />
+                </div>
+                <div class="post__user-info">
+                  <div class="post__user-name"><h3>User Name</h3></div>
+                  <div class="post__user-job"><p>User Job</p></div>
+                  <div class="post__date"><p>January 01, 2024</p></div>
+                </div>
+              </div>
+              <div class="post__content right">
+                <button>Button 1</button>
+                <button>Button 2</button>
+                <p class="monofont">+2 more...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <div class="post">
+            <hr />
+            <div class="post__title">
+              <h1>Post Title</h1>
+            </div>
+            <div class="post__content">
+              <div class="post__content left">
+                <div class="post__user-image">
+                  <img src="" />
+                </div>
+                <div class="post__user-info">
+                  <div class="post__user-name"><h3>User Name</h3></div>
+                  <div class="post__user-job"><p>User Job</p></div>
+                  <div class="post__date"><p>January 01, 2024</p></div>
+                </div>
+              </div>
+              <div class="post__content right">
+                <button>Button 1</button>
+                <button>Button 2</button>
+                <p class="monofont">+2 more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
