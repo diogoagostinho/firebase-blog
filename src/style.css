@@ -54,6 +54,10 @@ button:hover {
   text-decoration: underline;
 }
 
+hr {
+  opacity: 0;
+}
+
 /* 
   CLASSES 
 */
@@ -97,7 +101,6 @@ button {
 .post__user,
 .post__content-content {
   display: flex;
-  justify-content: space-between;
 }
 
 .navbar__logo,
@@ -122,11 +125,14 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 .navbar__buttons_separation {
   border: 1px solid black;
   height: 2rem;
+
+  opacity: 1;
 }
 
 .title-section {
@@ -148,6 +154,7 @@ button {
 
 .post__user-image {
   max-width: 8vw;
+  max-height: 8vw;
 }
 
 .post__user-image img {
@@ -155,6 +162,8 @@ button {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+
+  filter: grayscale(100%);
 }
 
 .post p {
@@ -165,11 +174,17 @@ button {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 30%;
+  align-items: flex-end;
 }
 
 .post_right p {
   margin-top: 8px;
   text-align: right;
+}
+
+.post_right button {
+  width: fit-content;
 }
 
 .content_left {
