@@ -1,3 +1,14 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: inherit;
+  background: #ffb22c;
+}
+
+::selection {
+  color: inherit;
+  background: #ffb22c;
+}
+
 /* 
   ELEMENTS
 */
@@ -152,16 +163,13 @@ button {
   margin-bottom: 2rem;
 }
 
-.post__user-image {
-  max-width: 8vw;
-  max-height: 8vw;
-}
-
 .post__user-image img {
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  width: 8vw;
+  height: 8vw;
 
   filter: grayscale(100%);
 }

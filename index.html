@@ -54,7 +54,7 @@
               </div>
             </div>
             <div class="navbar__buttons">
-              <a href=""><img src="sun.svg" /></a>
+              <a href=""><img id="themeSwitch" src="sun.svg" /></a>
               <hr class="navbar__buttons_separation" />
               <a href="https://firebase.blog/rss.xml" target="_blank"
                 ><img src="feed.svg"
@@ -76,7 +76,7 @@
             <div class="post">
               <div class="post__content">
                 <div class="post__content-title monofont">
-                  <a href=""><h1>Post Title</h1></a>
+                  <a href=""><h1>VueFire is now stable</h1></a>
                 </div>
                 <div class="post__content-content">
                   <div class="post_left">
@@ -131,47 +131,221 @@
               <hr />
               <div class="post__content">
                 <div class="post__content-title">
-                  <a href=""><h2>Post Title</h2></a>
+                  <a href=""
+                    ><h2>
+                      Adding complex Firestore queries to a Jetpack Compose app
+                    </h2></a
+                  >
                 </div>
                 <div class="post__content-content">
                   <div class="post_left">
                     <div class="post__user">
                       <div class="post__user-image">
-                        <img src="user5.jpg" />
+                        <img src="user8.jpg" />
                       </div>
                       <div class="post__user-info">
                         <div class="post__user-name">
-                          <h3>Eduardo San Martin Morote</h3>
+                          <h3>Marina Coelho</h3>
                         </div>
                         <div class="post__user-job monofont">
-                          <p class="monofont">Software Engineer</p>
+                          <p class="monofont">Developer Relations Engineer</p>
                         </div>
                         <div class="post__date monofont">
-                          <p>December 21, 2023</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="post__user">
-                      <div class="post__user-image">
-                        <img src="user4.jpg" />
-                      </div>
-                      <div class="post__user-info">
-                        <div class="post__user-name"><h3>David East</h3></div>
-                        <div class="post__user-job monofont">
-                          <p>Developer Advocate</p>
-                        </div>
-                        <div class="post__date monofont">
-                          <p>December 21, 2023</p>
+                          <p>December 13, 2023</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="post_right">
-                    <button>Vue</button>
+                    <button>Firestore</button>
+                    <button>Android</button>
+                    <button>Compose</button>
+                    <a href=""><p class="monofont">+2 more...</p></a>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <div class="post">
+              <hr />
+              <div class="post__content">
+                <div class="post__content-title">
+                  <a href=""
+                    ><h2>
+                      Introducing frequentist inference in Firebase A/B Testing
+                    </h2></a
+                  >
+                </div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="user10.jpg" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name">
+                          <h3>Stephanie Madison</h3>
+                        </div>
+                        <div class="post__user-job monofont">
+                          <p class="monofont">Software Engineer</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>November 21, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="user9.jpg" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name"><h3>Jon Mensing</h3></div>
+                        <div class="post__user-job monofont">
+                          <p>Product Manager</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>November 21, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post_right">
+                    <button>Remote Config</button>
+                    <button>A/B Testing</button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <div class="post">
+              <hr />
+              <div class="post__content">
+                <div class="post__content-title">
+                  <a href=""
+                    ><h2>Exsssspanding Possibilities with Python 🐍</h2></a
+                  >
+                </div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="user2.jpg" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name">
+                          <h3>Chris Gill</h3>
+                        </div>
+                        <div class="post__user-job monofont">
+                          <p class="monofont">Product Manager</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>November 16, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="user6.jpg" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name"><h3>Jeff Huleatt</h3></div>
+                        <div class="post__user-job monofont">
+                          <p>Developer Relations Engineer</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>November 16, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post_right">
+                    <button>Cloud Functions</button>
                     <button>Web</button>
                     <a href=""><p class="monofont">+2 more...</p></a>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="post">
+              <hr />
+              <div class="post__content">
+                <div class="post__content-title">
+                  <a href=""
+                    ><h2>
+                      A Console Refresh with Flexibility for Night and Day
+                    </h2></a
+                  >
+                </div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="user3.jpg" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name">
+                          <h3>Przemek Abratowski</h3>
+                        </div>
+                        <div class="post__user-job monofont">
+                          <p class="monofont">Senior UX Designer</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>November 13, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post_right">
+                    <button>Firebase Console</button>
+                    <button>Launch</button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="post">
+              <hr />
+              <div class="post__content">
+                <div class="post__content-title">
+                  <a href=""
+                    ><h2>
+                      See what’s new & what’s possible with Firebase at Demo Day
+                    </h2></a
+                  >
+                </div>
+                <div class="post__content-content">
+                  <div class="post_left">
+                    <div class="post__user">
+                      <div class="post__user-image">
+                        <img src="user1.jpg" />
+                      </div>
+                      <div class="post__user-info">
+                        <div class="post__user-name">
+                          <h3>Annum Munir</h3>
+                        </div>
+                        <div class="post__user-job monofont">
+                          <p class="monofont">Product Marketing Manager</p>
+                        </div>
+                        <div class="post__date monofont">
+                          <p>November 8, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post_right">
+                    <button>AI</button>
+                    <button>PaLM</button>
+                    <a href=""><p class="monofont">+22 more...</p></a>
                   </div>
                 </div>
               </div>
@@ -181,10 +355,30 @@
           <div class="content_right">
             <h3>Categories</h3>
             <div class="category-buttons">
-              <button>Button 1</button>
-              <button>Button 2</button>
-              <button>Button 3</button>
-              <button>Button 4</button>
+              <button>A/B Testing</button>
+              <button>Admin SDK</button>
+              <button>AI</button>
+              <button>Android</button>
+              <button>App Quality</button>
+              <button>Authentication</button>
+              <button>Cloud Functions</button>
+              <button>Cloud Messaging</button>
+              <button>Cloud Storage</button>
+              <button>Compose</button>
+              <button>Dynamic Links</button>
+              <button>Extensions</button>
+              <button>Firebase Console</button>
+              <button>Firestore</button>
+              <button>iOS</button>
+              <button>JavaScript</button>
+              <button>Launch</button>
+              <button>Machine Learning</button>
+              <button>PaLM</button>
+              <button>Remote Config</button>
+              <button>Vue</button>
+              <button>VueFire</button>
+              <button>Web</button>
+              <button>Remote Config</button>
             </div>
           </div>
         </div>
