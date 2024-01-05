@@ -1,3 +1,17 @@
+:root {
+  --darktheme-text: #d3e0f6;
+  --darktheme-background: #031626;
+  --darktheme-action: #7cacf8;
+  --darktheme-logo: invert(86%) sepia(10%) saturate(655%) hue-rotate(188deg)
+    brightness(103%) contrast(93%);
+
+  --lighttheme-text: #041e49;
+  --lighttheme-background: #fff;
+  --lighttheme-action: #202020;
+  --lighttheme-logo: invert(0%) sepia(12%) saturate(22%) hue-rotate(231deg)
+    brightness(88%) contrast(100%);
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   color: inherit;
@@ -41,12 +55,12 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #041e49;
+  color: var(--lighttheme-text);
 }
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: #041e49;
+  text-decoration-color: var(--lighttheme-text);
 }
 
 button {
@@ -56,12 +70,14 @@ button {
   border-radius: 10px;
   background: transparent;
   cursor: pointer;
+  color: #000;
 
   transition: all 0.15s ease-in;
 }
 button:hover {
-  background: #041e49;
+  background: var(--lighttheme-action);
   color: #fff;
+
   text-decoration: underline;
 }
 
@@ -75,6 +91,7 @@ hr {
 
 .root {
   font-family: "Montserrat", sans-serif;
+  background: var(--lighttheme-background);
 }
 
 .monofont,
@@ -82,12 +99,17 @@ button {
   font-family: "Roboto Mono", monospace;
 }
 
-.content {
+.bottom-section {
   margin: 1rem 1.4rem;
 }
 
+.top-section {
+  background: #7cacf8;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
 .navbar {
-  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .navbar__buttons img {
@@ -121,6 +143,10 @@ button {
 
 .navbar__logo-logo {
   margin-right: 2rem;
+}
+
+.navbarLogos {
+  filter: var(--lighttheme-logo);
 }
 
 .navbar__links {
@@ -238,4 +264,8 @@ button {
 
 .footer a:hover {
   margin: 0 1rem;
+}
+
+.footer p {
+  color: var(--lighttheme-text);
 }
