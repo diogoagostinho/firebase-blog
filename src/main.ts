@@ -32,43 +32,73 @@ function postHover() {
   for (var i = 0; i < posts.length; i++) {
     const post = posts[i];
 
-    post.addEventListener("mouseover", () => {
+    post.addEventListener("mouseenter", () => {
       const postImage = Array.from(post.getElementsByClassName("user_image"));
       const postButtons = Array.from(
         post.getElementsByClassName("post_button")
       );
       const postHrs = Array.from(post.getElementsByClassName("post_hr"));
+      const postText = Array.from(post.getElementsByClassName("post_text"));
 
       postImage.forEach((j) => {
         j.setAttribute("style", "transform: scale(1.1); filter: none;");
       });
 
       postButtons.forEach((j) => {
-        j.setAttribute("style", "border: 1px solid rgba(4, 30, 73, 0.8);");
+        j.setAttribute(
+          "style",
+          "border-color: var(--theme-action); color: var(--theme-action)"
+        );
+
+        j.addEventListener("mouseenter", () => {
+          j.setAttribute("style", "color: var(--theme-button-text);");
+        });
+
+        j.addEventListener("mouseleave", () => {
+          j.setAttribute(
+            "style",
+            "color: var(--theme-action); border-color: var(--theme-action);"
+          );
+        });
       });
 
       postHrs.forEach((j) => {
         j.setAttribute("style", "opacity: 1; transform: scale(1.03);");
       });
+
+      postText.forEach((j) => {
+        j.setAttribute(
+          "style",
+          "color: var(--theme-action); text-decoration-color: var(--theme-action)"
+        );
+      });
     });
 
-    post.addEventListener("mouseout", () => {
+    post.addEventListener("mouseleave", () => {
       const postImage = Array.from(post.getElementsByClassName("user_image"));
       const postButtons = Array.from(
         post.getElementsByClassName("post_button")
       );
       const postHrs = Array.from(post.getElementsByClassName("post_hr"));
+      const postText = Array.from(post.getElementsByClassName("post_text"));
 
       postImage.forEach((j) => {
         j.setAttribute("style", "transform: none; filter: grayscale(100%);");
       });
 
       postButtons.forEach((j) => {
-        j.setAttribute("style", "border: 1px solid rgba(4, 30, 73, 0.3);");
+        j.setAttribute("style", "border: var(--theme-button);");
       });
 
       postHrs.forEach((j) => {
         j.setAttribute("style", "opacity: 0; transform: none;");
+      });
+
+      postText.forEach((j) => {
+        j.setAttribute(
+          "style",
+          "color: var(--theme-text); text-decoration-color: var(--theme-text)"
+        );
       });
     });
   }
@@ -76,12 +106,8 @@ function postHover() {
 
 postHover();
 
-/**
- * Utility function to calculate the current theme setting.
- * Look for a local storage value.
- * Fall back to system setting.
- * Fall back to light mode.
- */
+// The Switch Functions
+
 function calculateSettingAsThemeString({
   localStorageTheme,
   systemSettingDark,
@@ -96,8 +122,6 @@ function calculateSettingAsThemeString({
 
   return "light";
 }
-
-// The Switch Functions
 
 const button = document.querySelector("[data-theme-toggle]");
 const localStorageTheme = localStorage.getItem("theme");
