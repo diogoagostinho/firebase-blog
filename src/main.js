@@ -123,7 +123,7 @@ function calculateSettingAsThemeString({
 
 const button = document.querySelector("[data-theme-toggle]");
 const localStorageTheme = localStorage.getItem("theme");
-const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: light)");
 
 let currentThemeSetting = calculateSettingAsThemeString({
   localStorageTheme,
