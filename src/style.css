@@ -52,6 +52,7 @@
 * {
   margin: 0;
   z-index: 10;
+  overflow-x: hidden;
 }
 
 p,
@@ -165,10 +166,11 @@ button {
   position: absolute;
   top: 20vh;
   width: 100%;
-  height: 130vh;
+  max-height: 200%;
   font-size: 70vh;
   font-weight: 600;
   opacity: 0.05;
+  overflow-y: hidden;
 }
 
 .navbar__buttons img {
@@ -369,4 +371,89 @@ button {
 button:hover {
   background-color: var(--theme-action);
   color: var(--theme-button-text);
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1030px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar__logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__logo-logo {
+    margin: 0;
+  }
+
+  .navbar__links {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar__buttons {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .title-section {
+    margin: 2rem;
+  }
+
+  .top-section__post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+
+  .post__content-title {
+    text-align: center;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .content_right {
+    margin-top: 4rem;
+  }
+
+  .category-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post__content-title {
+    font-size: 1ch;
+  }
+
+  .post__content-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post_right {
+    margin-top: 2rem;
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .post__user {
+    align-items: center;
+    gap: 1.4rem;
+  }
 }
