@@ -133,7 +133,7 @@ let currentThemeSetting = calculateSettingAsThemeString({
 });
 
 function updateButton({ buttonEl, isDark }) {
-  const newCta = isDark ? "moon.svg" : "sun.svg";
+  const newCta = isDark ? "public/moon.svg" : "public/sun.svg";
   buttonEl.setAttribute("src", newCta);
 }
 
