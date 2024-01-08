@@ -1,9 +1,7 @@
 var posts = document.getElementsByClassName("post");
 var topSectionHero = document.getElementsByClassName("top-section_hero");
-const topSection = document.getElementById("topSection") as HTMLDivElement;
-const bottomSection = document.getElementById(
-  "bottomSection"
-) as HTMLDivElement;
+const topSection = document.getElementById("topSection");
+const bottomSection = document.getElementById("bottomSection");
 
 // Hero Slide Function
 
